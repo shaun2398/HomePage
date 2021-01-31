@@ -1,0 +1,210 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid black; */
+    font-size: 1rem;
+    padding: 0em 2em;
+}
+
+.title{
+    font-size: 2rem;
+    font-family: 'Potta One', cursive;
+}
+.links{
+    /* border: 1px solid black; */
+    width: 20%;
+}
+
+.links ul{
+    margin: 0;
+    font-size: 1rem;
+    padding: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    /* border: 1px solid black; */
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    background-color: #a9a9a9;
+    justify-content: center;
+    align-items: space-between;
+    font-size: 1rem;
+    /* border: 1px solid black; */
+}
+
+.footer div{
+    display: flex;
+    width: 33.33%;
+    /* border: 1px solid black; */
+}
+
+.footer_one{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3em;
+}
+
+.footer_two{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3em;
+}
+
+.footer_two ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.footer_two a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer_three{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 3em;
+    font-size: .8rem;
+}
+
+.footer_three button {
+    width: 60%;
+    font-size: 1.5rem;
+    padding: 0.5em;
+    background-color: transparent;
+    border: orange solid .3rem;
+}
+
+.footer_three button:hover{
+    background-color: orange;
+    color:black
+}
+
+/* main grid */
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1.5fr);
+    grid-gap: 1em;
+    padding: 1em;
+    grid-template-areas: 
+    'one one two for thr thr'
+    'one one six for thr thr'
+    'fiv fiv six for sev sev'
+    'eth nin nin nin nin nin';
+}
+
+.one{
+    grid-area: one;
+    display: flex;
+    background-image: url('https://handluggageonly.co.uk/wp-content/uploads/2018/12/Hand-Luggage-Only-10-5.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.two{
+    grid-area: two;
+    background-image: url('https://i0.wp.com/unusualplaces.org/wp-content/uploads/2019/05/chocolatehills.jpg?fit=1680%2C1050&ssl=1');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.three{
+    grid-area: thr;
+    background-image: url('https://images.pexels.com/photos/3047993/pexels-photo-3047993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.four{
+    grid-area: for;
+    background-image: url('https://images.pexels.com/photos/239546/pexels-photo-239546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.five{
+    grid-area: fiv;
+    background-image: url('https://img1.advisor.travel/1314x680px-Banaue_Rice_Terraces_8.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.six{
+    grid-area: six;
+    background-image: url('https://www.elnidoparadise.com/wp-content/uploads/when-is-the-best-time-to-come-to-palawan-el-nido.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.seven{
+    grid-area: sev;
+    background-image: url('https://2.bp.blogspot.com/_hIvsbu2DyaE/TPRBInojnUI/AAAAAAAAAA8/lFXP6zveCFo/s1600/kalesa.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.eight{
+    grid-area: eth;
+    background-image: url('https://www.willflyforfood.net/wp-content/uploads/2017/10/manila-travel-guide.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nine{
+    grid-area: nin;
+    background-image: url('https://farm3.staticflickr.com/2687/4188485608_624d75e7b2_b.jpg');
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
