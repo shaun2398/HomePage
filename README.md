@@ -1,8 +1,6 @@
 # HomePage
 
 
-Concepts I used on this project: 
-
 -CSS Flexbox
 
 -CSS Grid
